@@ -33,10 +33,10 @@ int main() {
     }
                                  // З використанням циклу  параметром (цикл for)
     if (n==1) {
-      int dobytok = 1;
+      int dobytok = 0;
       for (int i=20; i<=80; i++) {
         if (i % 5 == 0) {
-          dobytok *= i;
+          dobytok += i;
         }
       }
       printf("\nВідповідь:\n");
@@ -45,11 +45,11 @@ int main() {
 
                                 // З використанням циклу з передумовою (цикл while)
     else if (n==2) {
-      int dobytok = 1;
+      int dobytok = 0;
       int i = 20;
       while (i <= 80) {
         if (i % 5 == 0) {
-          dobytok *= i;
+          dobytok += i;
         }
         i++;
       }
@@ -60,11 +60,11 @@ int main() {
                              // З використанням циклу з післяумовою (цикл do while)
 
     else if (n==3) {
-      int dobytok = 1;
+      int dobytok = 0;
       int i = 20;
       do {
         if (i % 5 == 0) {
-          dobytok *= i;
+          dobytok += i;
         }
         i++;
       } while (i <= 80);
